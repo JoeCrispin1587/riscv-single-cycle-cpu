@@ -15,7 +15,7 @@ module datapath (
     output [31:0] Result
 );
 
-wire [31:0] PCNext, PCPlus4, PCTarget,lui;
+wire [31:0] PCNext, PCPlus4, PCTarget,lui,AuiPC,lAuiResult;
 wire [31:0] ImmExt, SrcA, SrcB, WriteData, ALUResult;
 
 // next PC logic
@@ -33,11 +33,13 @@ mux2 #(32)     srcbmux(WriteData, ImmExt, ALUSrc, SrcB);
 alu            alu (SrcA, SrcB, ALUControl, ALUResult, Zero);
 //mux3 #(32)     resultmux(ALUResult, ReadData, PCPlus4, ResultSrc, Result); //prev code
 
-//lui logic
+//lui and auipc logic
 assign lui = {Instr[31:12],12'b0};
-mux4 #(32)    resultmux(ALUResult, ReadData, PCPlus4,lui, ResultSrc, Result);
+adder #(32)   auipc (PC,lui , AuiPC);
+mux2  #(32)   lAuimux (AuiPC, lui ,Instr[5],lAuiResult);
+mux4 #(32)    resultmux(ALUResult, ReadData, PCPlus4,lAuiResult, ResultSrc, Result);
 
-assign Mem_WrData = WriteData;
+assign Mem_WrData = WriteData;      
 assign Mem_WrAddr = ALUResult;
 
 endmodule
