@@ -10,170 +10,170 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code {/home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code" /home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v 
 # -- Compiling module t1_riscv_cpu
 # 
 # Top level modules:
 # 	t1_riscv_cpu
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code {/home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code" /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v 
 # -- Compiling module riscv_cpu
 # 
 # Top level modules:
 # 	riscv_cpu
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code {/home/joecrispin1587/riscv-single-cycle-cpu/code/data_mem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code" /home/joecrispin1587/riscv-single-cycle-cpu/code/data_mem.v 
 # -- Compiling module data_mem
 # 
 # Top level modules:
 # 	data_mem
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/reset_ff.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/reset_ff.v 
 # -- Compiling module reset_ff
 # 
 # Top level modules:
 # 	reset_ff
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux4.v 
 # -- Compiling module mux4
 # 
 # Top level modules:
 # 	mux4
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux2.v 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/main_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/main_decoder.v 
 # -- Compiling module main_decoder
 # 
 # Top level modules:
 # 	main_decoder
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/imm_extend.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/imm_extend.v 
 # -- Compiling module imm_extend
 # 
 # Top level modules:
 # 	imm_extend
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu_decoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu_decoder.v 
 # -- Compiling module alu_decoder
 # 
 # Top level modules:
 # 	alu_decoder
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components {/home/joecrispin1587/riscv-single-cycle-cpu/code/components/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components" /home/joecrispin1587/riscv-single-cycle-cpu/code/components/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 15:00:02 on Oct 03,2026, Elapsed time: 0:00:00
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code {/home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:02 on Oct 03,2026
+# Start time: 15:20:02 on Oct 03,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code" /home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v 
 # -- Compiling module instr_mem
 # 
 # Top level modules:
 # 	instr_mem
-# End time: 15:00:03 on Oct 03,2026, Elapsed time: 0:00:01
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test {/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v}
+# vlog -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test {/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:00:03 on Oct 03,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test" /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v 
-# -- Compiling module tb_1b
+# Start time: 15:20:02 on Oct 03,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test" /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v 
+# -- Compiling module tb_1c
 # 
 # Top level modules:
-# 	tb_1b
-# End time: 15:00:03 on Oct 03,2026, Elapsed time: 0:00:00
+# 	tb_1c
+# End time: 15:20:02 on Oct 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_1b
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_1b 
-# Start time: 15:00:03 on Oct 03,2026
-# Loading work.tb_1b
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_1c
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_1c 
+# Start time: 15:20:02 on Oct 03,2026
+# Loading work.tb_1c
 # Loading work.t1_riscv_cpu
 # Loading work.riscv_cpu
 # Loading work.controller
@@ -196,27 +196,55 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# 1. addi implementation is correct 
-# 2. andi implementation is correct 
-# 3. ori implementation is correct 
-# 4. slti implementation is correct 
-# 5. add implementation is correct 
-# 6. sub implementation is correct 
-# 7. slt implementation is correct 
-# 8. or implementation is correct 
-# 9. and implementation is correct 
-# 10. sw implementation is correct
-# 11. lw implementation is correct
-# 12. beq is executing
-# 12. beq is executing
-# 12. beq implementation is correct 
-# 13. lui implementation is correct 
-# 14. auipc implementation is correct 
-# 15. jalr implementation is correct 
-# Faulty Instructions =>           0
-# No errors encountered, congratulations!
-# ** Note: $stop    : /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v(63)
-#    Time: 265 ns  Iteration: 1  Instance: /tb_1b
-# Break in Task report_result at /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v line 63
-# End time: 15:00:20 on Oct 03,2026, Elapsed time: 0:00:17
+# 1. addi implementation is correct for x0 
+# 2. addi implementation is correct 
+# 3. slli implementation is incorrect
+# 4. slti implementation is incorrect
+# 5. sltiu implementation is incorrect
+# 6. xori implementation is correct 
+# 7. srli implementation is incorrect
+# 8. srai implementation is incorrect
+# 9. ori implementation is correct 
+# 10. andi implementation is correct
+# 11. add implementation is correct 
+# 12. sub implementation is correct 
+# 13. sll implementation is incorrect
+# 14. slt implementation is incorrect
+# 15. sltu implementation is incorrect
+# 16. xor implementation is correct 
+# 17. srl implementation is incorrect
+# 18. sra implementation is incorrect
+# 19. or implementation is correct 
+# 20. and implementation is correct 
+# 21. lui implementation is correct 
+# 22. auipc implementation is correct 
+# 23. sb implementation is correct
+# 24. sh implementation is correct
+# 25. sw implementation is correct
+# 26. lb implementation is correct
+# 27. lh implementation is correct
+# 28. lw implementation is correct
+# 29. lbu implementation is correct
+# 30. lhu implementation is incorrect
+# 31. blt is executing
+# 31. blt implementation is incorrect
+# 32. bge is executing
+# 32. bge implementation is incorrect
+# 33. bltu is executing
+# 33. bltu implementation is incorrect
+# 34. bgeu is executing
+# 34. bgeu implementation is incorrect
+# 35. bne is executing
+# 35. bne implementation is incorrect
+# 36. beq is executing
+# 36. beq is executing
+# 36. beq implementation is correct 
+# 37. jalr implementation is correct 
+# 38. jal implementation is correct 
+# Faulty Instructions =>          16
+# Error(s) encountered, please check your design!
+# ** Note: $stop    : /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v(533)
+#    Time: 805 ns  Iteration: 1  Instance: /tb_1c
+# Break in Module tb_1c at /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v line 533
+# End time: 15:20:15 on Oct 03,2026, Elapsed time: 0:00:13
 # Errors: 0, Warnings: 0

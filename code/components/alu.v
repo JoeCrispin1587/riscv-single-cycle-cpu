@@ -14,6 +14,7 @@ always @(a, b, alu_ctrl) begin
         3'b001:  alu_out <= a + ~b + 1;  // SUB
         3'b010:  alu_out <= a & b;       // AND
         3'b011:  alu_out <= a | b;       // OR
+        3'b110:  alu_out <= a ^ b;       //XOR
         3'b101:  begin                   // SLT
                      if (a[31] != b[31]) alu_out <= a[31] ? 0 : 1;
                      else alu_out <= a < b ? 1 : 0;

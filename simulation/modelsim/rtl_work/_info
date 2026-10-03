@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/joecrispin1587/riscv-single-cycle-cpu/simulation/modelsim
 vadder
-Z1 !s110 1791019802
+Z1 !s110 1791021002
 !i10b 1
 !s100 jXE67fZjiCj2W4l?`i:H?0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1791019802.000000
+Z6 !s108 1791021002.000000
 !s107 /home/joecrispin1587/riscv-single-cycle-cpu/code/components/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code/components|/home/joecrispin1587/riscv-single-cycle-cpu/code/components/adder.v|
 !i113 1
@@ -36,16 +36,16 @@ Z9 tCvgOpt 0
 valu
 R1
 !i10b 1
-!s100 g20L9:U0SV[FIPQRdfNfG2
+!s100 _i;HmTk2zen9@<CefW99I0
 R2
-IKn<kh2djKbVjTG:AO^ERm2
+Ieb`:6njLjo`cb5fzgQE6G0
 R3
 R0
-R4
+w1791020954
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu.v
 !i122 12
-L0 4 24
+Z10 L0 4 25
 R5
 r1
 !s85 0
@@ -60,16 +60,16 @@ R9
 valu_decoder
 R1
 !i10b 1
-!s100 onj5JeIA2`6W>Hm540:3H2
+!s100 b?;D_Uf?:MA]7mlFKjJK80
 R2
-ID6iDP]olKUDJkMDh]niWk1
+I>XUWg<^9RRLLgXUi0cm0K3
 R3
 R0
-R4
+w1791020957
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu_decoder.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu_decoder.v
 !i122 11
-L0 4 28
+Z11 L0 4 29
 R5
 r1
 !s85 0
@@ -93,7 +93,7 @@ w1791019266
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v
 !i122 10
-L0 4 25
+R10
 R5
 r1
 !s85 0
@@ -117,7 +117,7 @@ R4
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/data_mem.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/data_mem.v
 !i122 2
-Z10 L0 4 19
+Z12 L0 4 19
 R5
 r1
 !s85 0
@@ -127,7 +127,7 @@ R6
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code|/home/joecrispin1587/riscv-single-cycle-cpu/code/data_mem.v|
 !i113 1
 R7
-Z11 !s92 -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code
+Z13 !s92 -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code
 R9
 vdatapath
 R1
@@ -178,18 +178,18 @@ R7
 R8
 R9
 vinstr_mem
-Z12 !s110 1791019803
+R1
 !i10b 1
-!s100 RO0Ufl?`fh37[iJKzbSfa2
+!s100 Og<7TIc_TlFM_QN]j;mZm3
 R2
-Ic8P1akzL:=]UDG6Bng?Ml3
+I7Q94LmO22WCnM1iP@SU2W1
 R3
 R0
-w1791005350
+w1791020671
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v
 !i122 14
-R10
+R12
 R5
 r1
 !s85 0
@@ -199,7 +199,7 @@ R6
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code|/home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v|
 !i113 1
 R7
-R11
+R13
 R9
 vmain_decoder
 R1
@@ -213,7 +213,7 @@ w1791019772
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/main_decoder.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/main_decoder.v
 !i122 7
-L0 4 29
+R11
 R5
 r1
 !s85 0
@@ -237,7 +237,7 @@ R4
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux2.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux2.v
 !i122 6
-Z13 L0 4 9
+Z14 L0 4 9
 R5
 r1
 !s85 0
@@ -261,7 +261,7 @@ R4
 8/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux4.v
 F/home/joecrispin1587/riscv-single-cycle-cpu/code/components/mux4.v
 !i122 5
-R13
+R14
 R5
 r1
 !s85 0
@@ -343,7 +343,7 @@ R6
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code|/home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v|
 !i113 1
 R7
-R11
+R13
 R9
 vt1_riscv_cpu
 R1
@@ -367,28 +367,28 @@ R6
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/code|/home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v|
 !i113 1
 R7
-R11
+R13
 R9
-vtb_1b
-R12
+vtb_1c
+R1
 !i10b 1
-!s100 KdPeecC9dfGZ@b0AgzP;02
+!s100 ?f;S0EQ;D=AAAMZhLO8GU0
 R2
-IUZeO_fecUWiKnJRi1jQAT3
+I5h8bzbCbWWR^BiOTnXheS0
 R3
 R0
-w1791006587
-8/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v
-F/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v
+w1791006040
+8/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v
+F/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v
 !i122 15
-L0 3 310
+L0 3 535
 R5
 r1
 !s85 0
 31
-!s108 1791019803.000000
-!s107 /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test|/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1b.v|
+R6
+!s107 /home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test|/home/joecrispin1587/riscv-single-cycle-cpu/.test/tb_1c.v|
 !i113 1
 R7
 !s92 -vlog01compat -work work +incdir+/home/joecrispin1587/riscv-single-cycle-cpu/.test
