@@ -1,5 +1,5 @@
 Analysis & Synthesis report for t1_riscv_cpu
-Sat Oct  3 15:19:55 2026
+Sun Oct  4 12:21:50 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,27 +13,28 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:pcmux
- 11. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:jalrmux
- 12. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg
- 13. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:pcadd4
- 14. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:pcaddbranch
- 15. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|reg_file:rf
- 16. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:srcbmux
- 17. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|alu:alu
- 18. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:auipc
- 19. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:lAuimux
- 20. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmux
- 21. Parameter Settings for User Entity Instance: instr_mem:instrmem
- 22. Parameter Settings for User Entity Instance: data_mem:datamem
- 23. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|adder:pcadd4"
- 24. Port Connectivity Checks: "riscv_cpu:rvcpu|controller:c"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:pcmux
+ 12. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:jalrmux
+ 13. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg
+ 14. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:pcadd4
+ 15. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:pcaddbranch
+ 16. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|reg_file:rf
+ 17. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:srcbmux
+ 18. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|alu:alu
+ 19. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|adder:auipc
+ 20. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux2:lAuimux
+ 21. Parameter Settings for User Entity Instance: riscv_cpu:rvcpu|datapath:dp|mux4:resultmux
+ 22. Parameter Settings for User Entity Instance: instr_mem:instrmem
+ 23. Parameter Settings for User Entity Instance: data_mem:datamem
+ 24. Port Connectivity Checks: "riscv_cpu:rvcpu|datapath:dp|adder:pcadd4"
+ 25. Port Connectivity Checks: "riscv_cpu:rvcpu|controller:c"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -60,15 +61,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct  3 15:19:55 2026       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct  4 12:21:50 2026       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; t1_riscv_cpu                                ;
 ; Top-level Entity Name              ; t1_riscv_cpu                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 6,630                                       ;
-;     Total combinational functions  ; 3,622                                       ;
-;     Dedicated logic registers      ; 3,104                                       ;
-; Total registers                    ; 3104                                        ;
+; Total logic elements               ; 7,136                                       ;
+;     Total combinational functions  ; 4,160                                       ;
+;     Dedicated logic registers      ; 3,072                                       ;
+; Total registers                    ; 3072                                        ;
 ; Total pins                         ; 228                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -216,20 +217,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 6,630     ;
+; Estimated Total logic elements              ; 7,136     ;
 ;                                             ;           ;
-; Total combinational functions               ; 3622      ;
+; Total combinational functions               ; 4160      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 3223      ;
-;     -- 3 input functions                    ; 322       ;
-;     -- <=2 input functions                  ; 77        ;
+;     -- 4 input functions                    ; 3514      ;
+;     -- 3 input functions                    ; 584       ;
+;     -- <=2 input functions                  ; 62        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 3450      ;
-;     -- arithmetic mode                      ; 172       ;
+;     -- normal mode                          ; 3957      ;
+;     -- arithmetic mode                      ; 203       ;
 ;                                             ;           ;
-; Total registers                             ; 3104      ;
-;     -- Dedicated logic registers            ; 3104      ;
+; Total registers                             ; 3072      ;
+;     -- Dedicated logic registers            ; 3072      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 228       ;
@@ -237,9 +238,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 3104      ;
-; Total fan-out                               ; 23778     ;
-; Average fan-out                             ; 3.31      ;
+; Maximum fan-out                             ; 3072      ;
+; Total fan-out                               ; 25598     ;
+; Average fan-out                             ; 3.33      ;
 +---------------------------------------------+-----------+
 
 
@@ -248,25 +249,67 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name  ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+--------------+
-; |t1_riscv_cpu                ; 3622 (65)           ; 3104 (0)                  ; 0           ; 0            ; 0       ; 0         ; 228  ; 0            ; |t1_riscv_cpu                                               ; t1_riscv_cpu ; work         ;
+; |t1_riscv_cpu                ; 4160 (65)           ; 3072 (0)                  ; 0           ; 0            ; 0       ; 0         ; 228  ; 0            ; |t1_riscv_cpu                                               ; t1_riscv_cpu ; work         ;
 ;    |data_mem:datamem|        ; 1424 (1424)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|data_mem:datamem                              ; data_mem     ; work         ;
-;    |instr_mem:instrmem|      ; 193 (193)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|instr_mem:instrmem                            ; instr_mem    ; work         ;
-;    |riscv_cpu:rvcpu|         ; 1940 (0)            ; 1056 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu                               ; riscv_cpu    ; work         ;
-;       |controller:c|         ; 40 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c                  ; controller   ; work         ;
-;          |alu_decoder:ad|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c|alu_decoder:ad   ; alu_decoder  ; work         ;
+;    |instr_mem:instrmem|      ; 192 (192)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|instr_mem:instrmem                            ; instr_mem    ; work         ;
+;    |riscv_cpu:rvcpu|         ; 2479 (0)            ; 1024 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu                               ; riscv_cpu    ; work         ;
+;       |controller:c|         ; 28 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c                  ; controller   ; work         ;
+;          |alu_decoder:ad|    ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c|alu_decoder:ad   ; alu_decoder  ; work         ;
 ;          |main_decoder:md|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c|main_decoder:md  ; main_decoder ; work         ;
-;       |datapath:dp|          ; 1900 (0)            ; 1056 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp                   ; datapath     ; work         ;
+;       |datapath:dp|          ; 2451 (1)            ; 1024 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp                   ; datapath     ; work         ;
 ;          |adder:auipc|       ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|adder:auipc       ; adder        ; work         ;
 ;          |adder:pcadd4|      ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|adder:pcadd4      ; adder        ; work         ;
 ;          |adder:pcaddbranch| ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|adder:pcaddbranch ; adder        ; work         ;
-;          |alu:alu|           ; 242 (242)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu           ; alu          ; work         ;
-;          |imm_extend:ext|    ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|imm_extend:ext    ; imm_extend   ; work         ;
-;          |mux2:srcbmux|      ; 36 (36)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux2:srcbmux      ; mux2         ; work         ;
-;          |mux4:resultmux|    ; 87 (87)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux    ; mux4         ; work         ;
-;          |reg_file:rf|       ; 1397 (1397)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reg_file:rf       ; reg_file     ; work         ;
-;          |reset_ff:pcreg|    ; 34 (34)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg    ; reset_ff     ; work         ;
+;          |alu:alu|           ; 745 (745)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu           ; alu          ; work         ;
+;          |imm_extend:ext|    ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|imm_extend:ext    ; imm_extend   ; work         ;
+;          |mux2:jalrmux|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux2:jalrmux      ; mux2         ; work         ;
+;          |mux2:srcbmux|      ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux2:srcbmux      ; mux2         ; work         ;
+;          |mux4:resultmux|    ; 106 (106)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux    ; mux4         ; work         ;
+;          |reg_file:rf|       ; 1427 (1427)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reg_file:rf       ; reg_file     ; work         ;
+;          |reset_ff:pcreg|    ; 31 (31)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg    ; reset_ff     ; work         ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                    ;
++---------------------------------------------------------+---------------------------------------------+
+; Register name                                           ; Reason for Removal                          ;
++---------------------------------------------------------+---------------------------------------------+
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~0  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~1  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~2  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~3  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~4  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~5  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~6  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~7  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~8  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~9  ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~10 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~11 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~12 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~13 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~14 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~15 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~16 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~17 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~18 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~19 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~20 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~21 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~22 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~23 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~24 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~25 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~26 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~27 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~28 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~29 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~30 ; Stuck at GND due to stuck port clock_enable ;
+; riscv_cpu:rvcpu|datapath:dp|reg_file:rf|reg_file_arr~31 ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 32                  ;                                             ;
++---------------------------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -274,28 +317,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3104  ;
+; Total registers                              ; 3072  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3074  ;
+; Number of registers using Clock Enable       ; 3042  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg|q[0]  ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg|q[15] ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux29        ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[9]  ;
-; 5:1                ; 20 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[31] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[1]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg|q[0]           ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg|q[15]          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[0]           ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[16]          ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[11]          ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|mux4:resultmux|y[15]          ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|controller:c|alu_decoder:ad|ALUControl[2] ;
+; 20:1               ; 7 bits    ; 91 LEs        ; 56 LEs               ; 35 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux11                 ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 56 LEs               ; 40 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux23                 ;
+; 21:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux6                  ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux24                 ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 18 LEs               ; 10 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux2                  ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 18 LEs               ; 10 LEs                 ; No         ; |t1_riscv_cpu|riscv_cpu:rvcpu|datapath:dp|alu:alu|Mux29                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------+
@@ -458,22 +508,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 228                         ;
-; cycloneiii_ff         ; 3104                        ;
+; cycloneiii_ff         ; 3072                        ;
 ;     CLR SLD           ; 30                          ;
-;     ENA               ; 3072                        ;
-;     ENA CLR SLD       ; 2                           ;
-; cycloneiii_lcell_comb ; 3622                        ;
-;     arith             ; 172                         ;
+;     ENA               ; 3040                        ;
+;     ENA CLR           ; 2                           ;
+; cycloneiii_lcell_comb ; 4160                        ;
+;     arith             ; 203                         ;
 ;         2 data inputs ; 29                          ;
-;         3 data inputs ; 143                         ;
-;     normal            ; 3450                        ;
+;         3 data inputs ; 174                         ;
+;     normal            ; 3957                        ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 47                          ;
-;         3 data inputs ; 179                         ;
-;         4 data inputs ; 3223                        ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 410                         ;
+;         4 data inputs ; 3514                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 24.50                       ;
-; Average LUT depth     ; 14.75                       ;
+; Max LUT depth         ; 29.00                       ;
+; Average LUT depth     ; 18.80                       ;
 +-----------------------+-----------------------------+
 
 
@@ -482,7 +532,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -492,7 +542,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct  3 15:19:44 2026
+    Info: Processing started: Sun Oct  4 12:21:38 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off t1_riscv_cpu -c t1_riscv_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -528,22 +578,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file code/co
     Info (12023): Found entity 1: alu File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/alu.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file code/components/adder.v
     Info (12023): Found entity 1: adder File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/adder.v Line: 4
-Warning (10236): Verilog HDL Implicit Net warning at riscv_cpu.v(19): created implicit net for "PCSrc" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at riscv_cpu.v(19): created implicit net for "Jalr" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at riscv_cpu.v(32): created implicit net for "PCSrc" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at riscv_cpu.v(36): created implicit net for "Jalr" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 36
 Info (12127): Elaborating entity "t1_riscv_cpu" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at t1_riscv_cpu.v(23): truncated value with size 32 to match size of target (1) File: /home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v Line: 23
 Info (12128): Elaborating entity "riscv_cpu" for hierarchy "riscv_cpu:rvcpu" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v Line: 19
-Info (12128): Elaborating entity "controller" for hierarchy "riscv_cpu:rvcpu|controller:c" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 20
-Info (12128): Elaborating entity "main_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|main_decoder:md" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v Line: 21
-Info (12128): Elaborating entity "alu_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|alu_decoder:ad" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v Line: 23
-Info (12128): Elaborating entity "datapath" for hierarchy "riscv_cpu:rvcpu|datapath:dp" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 24
+Info (12128): Elaborating entity "controller" for hierarchy "riscv_cpu:rvcpu|controller:c" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 39
+Info (12128): Elaborating entity "main_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|main_decoder:md" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v Line: 22
+Info (12128): Elaborating entity "alu_decoder" for hierarchy "riscv_cpu:rvcpu|controller:c|alu_decoder:ad" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/controller.v Line: 24
+Info (12128): Elaborating entity "datapath" for hierarchy "riscv_cpu:rvcpu|datapath:dp" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/riscv_cpu.v Line: 43
 Info (12128): Elaborating entity "mux2" for hierarchy "riscv_cpu:rvcpu|datapath:dp|mux2:pcmux" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 24
 Info (12128): Elaborating entity "reset_ff" for hierarchy "riscv_cpu:rvcpu|datapath:dp|reset_ff:pcreg" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 27
 Info (12128): Elaborating entity "adder" for hierarchy "riscv_cpu:rvcpu|datapath:dp|adder:pcadd4" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 29
-Info (12128): Elaborating entity "reg_file" for hierarchy "riscv_cpu:rvcpu|datapath:dp|reg_file:rf" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 33
-Info (12128): Elaborating entity "imm_extend" for hierarchy "riscv_cpu:rvcpu|datapath:dp|imm_extend:ext" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 34
-Info (12128): Elaborating entity "alu" for hierarchy "riscv_cpu:rvcpu|datapath:dp|alu:alu" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 38
-Info (12128): Elaborating entity "mux4" for hierarchy "riscv_cpu:rvcpu|datapath:dp|mux4:resultmux" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 45
+Info (12128): Elaborating entity "reg_file" for hierarchy "riscv_cpu:rvcpu|datapath:dp|reg_file:rf" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 47
+Info (12128): Elaborating entity "imm_extend" for hierarchy "riscv_cpu:rvcpu|datapath:dp|imm_extend:ext" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 48
+Info (12128): Elaborating entity "alu" for hierarchy "riscv_cpu:rvcpu|datapath:dp|alu:alu" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 52
+Info (12128): Elaborating entity "mux4" for hierarchy "riscv_cpu:rvcpu|datapath:dp|mux4:resultmux" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/components/datapath.v Line: 60
 Info (12128): Elaborating entity "instr_mem" for hierarchy "instr_mem:instrmem" File: /home/joecrispin1587/riscv-single-cycle-cpu/code/t1_riscv_cpu.v Line: 20
 Warning (10850): Verilog HDL warning at instr_mem.v(15): number of words (79) in memory file does not match the number of elements in the address range [0:511] File: /home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v Line: 15
 Warning (10030): Net "instr_ram.data_a" at instr_mem.v(10) has no driver or initial value, using a default initial value '0' File: /home/joecrispin1587/riscv-single-cycle-cpu/code/instr_mem.v Line: 10
@@ -558,15 +608,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file /home/joecrispin1587/riscv-single-cycle-cpu/output_files/t1_riscv_cpu.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6924 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7428 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 67 input pins
     Info (21059): Implemented 161 output pins
-    Info (21061): Implemented 6696 logic cells
+    Info (21061): Implemented 7200 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 515 megabytes
-    Info: Processing ended: Sat Oct  3 15:19:55 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 518 megabytes
+    Info: Processing ended: Sun Oct  4 12:21:50 2026
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+

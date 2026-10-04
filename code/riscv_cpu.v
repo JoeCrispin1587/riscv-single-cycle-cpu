@@ -11,17 +11,36 @@ module riscv_cpu (
     output [31:0] Result
 );
 
-wire        ALUSrc, RegWrite, Jump, Zero;
+wire        ALUSrc, RegWrite, Jump, Zero,lt,ltu;
 wire [1:0]  ResultSrc, ImmSrc;
-wire [2:0]  ALUControl;
+wire [3:0]  ALUControl;
 
-controller  c   (Instr[6:0], Instr[14:12], Instr[30], Zero,
-                ResultSrc, MemWrite, PCSrc, ALUSrc, RegWrite, Jump,Jalr,
-                ImmSrc, ALUControl);
+//instruction bits matching 
+wire [6:0]  op       = Instr[6:0];
+wire [2:0]  funct3   = Instr[14:12];
+wire        funct7b5 = Instr[30];
+
+controller c (
+    .op(op),
+    .funct3(funct3),
+    .funct7b5(funct7b5),
+    .Zero(Zero),
+    .lt(lt),               // Crucial for blt
+    .ltu(ltu),             // Crucial for bltu, bgeu
+    .ResultSrc(ResultSrc),
+    .MemWrite(MemWrite),
+    .PCSrc(PCSrc),
+    .ALUSrc(ALUSrc),
+    .RegWrite(RegWrite),
+    .Jump(Jump),
+    .Jalr(Jalr),
+    .ImmSrc(ImmSrc),
+    .ALUControl(ALUControl)
+);
 
 datapath    dp  (clk, reset, ResultSrc, PCSrc,
                 ALUSrc, RegWrite, ImmSrc, ALUControl,Jalr,
-                Zero, PC, Instr, Mem_WrAddr, Mem_WrData, ReadData, Result);
+                Zero,lt,ltu, PC, Instr, Mem_WrAddr, Mem_WrData, ReadData, Result);
 
 endmodule
 
